@@ -19,6 +19,12 @@ export default function App() {
   function handleAppClick(event) {
     const element = event.currentTarget;
     element.style.backgroundColor = "skyblue";
+
+  function handleLinkClick(event) {
+    event.preventDefault();
+    alert(event.target.href);
+  }
+
   }
   return (
     <div className="App" onClick={handleAppClick}>
@@ -31,7 +37,7 @@ export default function App() {
         Click me
       </button>
       <Boxes />
-      <a href="https://bcit.ca" target="_blank">
+      <a href="https://bcit.ca" target="_blank" onClick={handleLinkClick}>
         BCIT Home
       </a>
     </div>
