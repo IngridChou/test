@@ -6,8 +6,16 @@ function Boxes() {
     const element = event.target;
     element.style.backgroundColor = "cyan";
   }
+
+  function handleOuterClick(event) {
+    const element = event.curentTarget;
+    setTimeout(function () {
+      element.style.backgroundColor = "red";
+    }, 2000);
+  }
+
   return (
-    <div className="outer">
+    <div className="outer" onClick={handleOuterClick}>
       <div className="inner" onClick={handleInnerClick}></div>
     </div>
   );

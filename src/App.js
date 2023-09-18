@@ -18,7 +18,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <Boxes />
       <p>this is a test project</p>
       <button
         onClick={handleClick}
@@ -27,6 +26,7 @@ export default function App() {
       >
         Click me
       </button>
+      <Boxes />
     </div>
   );
 }
