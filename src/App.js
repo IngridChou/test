@@ -1,5 +1,5 @@
 import "./styles.css";
-import Boxes from "./components";
+import Boxes from "./components/Boxes";
 
 export default function App() {
   function handleClick() {
