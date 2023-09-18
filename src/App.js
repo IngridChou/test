@@ -16,8 +16,12 @@ export default function App() {
     element.textContent = "Click Me!";
   }
 
+  function handleAppClick(event) {
+    const element = event.currentTarget;
+    element.style.backgroundColor = "skyblue";
+  }
   return (
-    <div className="App">
+    <div className="App" onClick={handleAppClick}>
       <p>this is a test project</p>
       <button
         onClick={handleClick}
@@ -27,6 +31,9 @@ export default function App() {
         Click me
       </button>
       <Boxes />
+      <a href="https://bcit.ca" target="_blank">
+        BCIT Home
+      </a>
     </div>
   );
 }
