@@ -19,13 +19,13 @@ export default function App() {
   function handleAppClick(event) {
     const element = event.currentTarget;
     element.style.backgroundColor = "skyblue";
+  }
 
   function handleLinkClick(event) {
     event.preventDefault();
     alert(event.target.href);
   }
 
-  }
   return (
     <div className="App" onClick={handleAppClick}>
       <p>this is a test project</p>
