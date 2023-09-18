@@ -7,3 +7,5 @@ function Boxes() {
     </div>
   );
 }
+
+export default Boxes;
