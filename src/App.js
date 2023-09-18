@@ -1,10 +1,30 @@
 import "./styles.css";
 
 export default function App() {
+  function handleClick() {
+    alert("You clicked me!");
+  }
+
+  function handleMouseOver(event) {
+    const element = event.target; //target means <button></button>
+    element.textContent = "You are hovering above me";
+  }
+
+  function handleMouseOut(event) {
+    const element = event.target; // target means the <button></button>
+    element.textContent = "Click Me!";
+  }
+
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <p>this is a test project</p>
+      <button
+        onClick={handleClick}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
+        Click me
+      </button>
     </div>
   );
 }
