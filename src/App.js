@@ -1,4 +1,5 @@
 import "./styles.css";
+import Boxes from "./components";
 
 export default function App() {
   function handleClick() {
@@ -25,6 +26,7 @@ export default function App() {
       >
         Click me
       </button>
+      <Boxes />
     </div>
   );
 }
